@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+<br>
+<br>
+<!-- <input type="submit" value="Edit"> -->
+<%= link_to 'Edit', edit_task_path(@task) %>
+<br>
+# <%= link_to 'Delete', delete_task_path(@task), method: :delete, data: {confirm: 'Are you sure'} %>
